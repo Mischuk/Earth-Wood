@@ -1,7 +1,7 @@
 # Планета Дерева
 
 ## Демо
-Смотреть: [frontende.info/pikmedia](http://frontende.info/earthwood/)
+Смотреть: [frontende.info/earthwood](http://frontende.info/earthwood/)
 
 Скачать: [Earth-Wood-master.zip](https://github.com/Mischuk/Earth-Wood/archive/master.zip)
 
