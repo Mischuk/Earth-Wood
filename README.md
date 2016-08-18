@@ -1,9 +1,9 @@
-# Pikmedia
+# Планета Дерева
 
 ## Демо
-Смотреть: [frontende.info/pikmedia](http://frontende.info/pikmedia)
+Смотреть: [frontende.info/pikmedia](http://frontende.info/earthwood/)
 
-Скачать: [pikmedia-master.zip](https://github.com/Mischuk/pikmedia/archive/master.zip)
+Скачать: [Earth-Wood-master.zip](https://github.com/Mischuk/Earth-Wood/archive/master.zip)
 
 ## Описание
 * Сборщик [Gulp](http://gulpjs.com/)
@@ -20,7 +20,7 @@
 
 * Установить [node.js](https://nodejs.org)
 * Зайти в папку с установленной nodejs и обновить npm до последней версии: `npm install npm@latest`
-* Склонировать или [скачать](https://github.com/Mischuk/pikmedia/archive/master.zip) проект
+* Склонировать или скачать проект
 * Установить gulp глобально (один раз!): `npm i -g gulp`
 * Установить зависимости (1 раз на проект): `npm i`
 * Запустить gulp: `gulp dev`
@@ -63,12 +63,12 @@ frontend/                               # Корень проекта
 │           │   └── variables.styl      # Переменные проекта
 │           ├── components              # Глобальные компоненты
 │           └── app.styl                # Точка сборки styl файлов
-├── tmp                                 # Временная папка
+├── tmp                                 # Каталог с временными файлами
 ├── zip                                 # Папка с zip архивами
 ├── .csscomb.json                       # Игнорирование файлов в Git
 ├── gulpfile.js                         # Конфиг для Gulp
 ├── package.json                        # Зависимости для node.js
-└── README.md                           # Файл который вы читаете
+└── README.md                           # Файл, который вы читаете
 ```
 
 ## Контакты
