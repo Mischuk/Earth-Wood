@@ -1,0 +1,117 @@
+.m_header
+  // position absolute
+  position fixed
+  left 0
+  top 0
+  width 100%
+  height 120px
+  background none
+  z-index 20
+  @media screen and (max-height: 680px)
+    position absolute
+  .logo
+    position absolute
+    z-index 10
+    left 15px
+    top 50%
+    width 200px
+    height 83px
+    margin-top -(@height/2)
+    background url("../images/logo-h.png") no-repeat 0 0
+  .contacts
+    position absolute
+    right 15px
+    top 0
+    height 100%
+    width 210px
+    text-align center
+    .tel
+      a
+        brad()
+        color $orange
+        font-size 19px
+        cursor default
+    .callback
+      margin-top 5px
+      a
+        height 42px
+        border-radius 25px
+        line-height 38px
+        color #fff
+        font-size 16px
+  nav
+    padding 0 240px
+    height 100%
+    @media screen and (max-width: 1200px)
+      padding 0 220px
+    @media screen and (max-width: 992px)
+      display none
+    ul
+      display table
+      height 100%
+      width 100%
+      table-layout fixed
+      li
+        display table-cell
+        vertical-align middle
+        text-align center
+    a
+      color #fff
+      span
+        position relative
+        overflow hidden
+        padding 5px
+        display inline-block
+        vertical-align middle
+        &:before, &:after
+          anim()
+          content ''
+          position absolute
+          bottom 0
+          width 0
+          background $orange
+          height 2px
+        &:before
+          left 50%
+        &:after
+          right 50%
+        &:hover
+          &:after, &:before
+            width 51%
+  &.fixed
+    top -50px
+    transform translateY(50px)
+    transition transform .5s cubic-bezier(.33,.66,.66,1)
+    background #fff
+    position fixed
+    z-index 200
+    height 50px
+    box-shadow 0 0 5px rgba(0,0,0,.5)
+    .logo
+      width 48px
+      height 44px
+      margin-top -22px
+      background-size cover
+    nav
+      padding-left 70px
+      padding-right 400px
+      a
+        color $black
+    .callback
+      margin-left 20px
+      margin-top 0
+      a
+        display inline-block
+        vertical-align top
+        color $orange
+        padding-left 10px
+        padding-right 10px
+        height 30px
+        line-height 26px
+        &:hover
+          color #fff
+    .contacts
+      width auto
+      .tel, .callback
+        display inline-block
+        vertical-align middle

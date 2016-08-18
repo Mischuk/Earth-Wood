@@ -1,0 +1,47 @@
+.m_s4
+  clearfix()
+  position relative
+  z-index 100
+  padding 80px 0
+  background #fff
+  .row
+    margin-bottom 50px
+  .column
+    float left
+    width 50%
+    &:last-child
+      padding-top 210px
+  .paragraph
+    padding 10px 20px
+  .image
+    position relative
+    height 370px
+    padding 15px
+  .frame
+    position relative
+    width 100%
+    height 100%
+    padding 15px
+    &:after
+      content ''
+      z-index 1
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 100%
+      border 15px solid #fff
+  .action
+    width 475px
+    height 70px
+    margin 0 auto
+    a
+      regular()
+      display block
+      width 100%
+      height 100%
+      line-height 66px
+      color #f69e20
+      border-radius 50px
+      &:hover
+        color #fff

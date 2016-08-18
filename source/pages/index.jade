@@ -1,0 +1,422 @@
+doctype html
+html(lang="ru").no-js
+  head
+    title Планета дерева
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="msapplication-tap-highlight" content="no")
+    link(rel="icon" href="favicon.ico" type="image/x-icon")
+    link(rel="stylesheet" href="styles/plugins.css")
+    link(rel="stylesheet" href="styles/app.css")
+    script(src='js/modernizr.js')
+  body
+    header.m_header
+      .wrapper
+        .logo: a(href="#")
+        nav
+          ul
+            li: a(href="#"): span Портфолио
+            li: a(href="#"): span Мебель
+            li: a(href="#"): span Лестницы
+            li: a(href="#"): span Двери
+            li: a(href="#"): span Контакты
+        .contacts
+          .vertical-outer
+            .vertical-inner
+              .tel: a(href="#") 8 (495) 973-52-52
+              .callback
+                a(href="#modal-form" class="popup-with-zoom-anim btn-orange") Обратный звонок
+    section.m_s1
+      .wrapper
+        .frame
+          .vertical-outer
+            .vertical-inner
+              h1.tsh Создаем мебель, которая <br>призвана утолять ваши капризы
+              .paragraph.tsh.large Вдохните жизнь в ваше жилье с новой мебелью, сделанной только для вас и вашего комфорта по европейским технологиям с русской душой.
+              .action: a(href="#modal-form" class="popup-with-zoom-anim btn-orange") Записаться на бесплатную консультацию
+      .scroll-down
+    section.m_s2
+      .wrapper
+        .section-title
+          span.counter 02
+          span.title В трех словах о том, что мы делаем
+        .row
+          .column
+            .url-image(style="background-image: url('images/s2/1.jpg')")
+            .wrap
+              .circle
+                .circle-image(style="background-image: url('images/s2/1r.png')")
+                .icon.icon-1
+              .desc
+                .title Мебель
+                .paragraph Корпусную мебель <br>для любых помещений
+          .column
+            .url-image(style="background-image: url('images/s2/2.jpg')")
+            .wrap
+              .circle
+                .circle-image(style="background-image: url('images/s2/2r.png')")
+                .icon.icon-2
+              .desc
+                .title Двери
+                .paragraph Межкомнатные двери <br>(крепкие, красивые, легкие)
+          .column
+            .url-image(style="background-image: url('images/s2/3.jpg')")
+            .wrap
+              .circle
+                .circle-image(style="background-image: url('images/s2/3r.png')")
+                .icon.icon-3
+              .desc
+                .title Лестницы
+                .paragraph Лестницы всех видов, <br>из любы материалов
+    section.m_s3
+      .wrapper
+        .left
+          .section-title.compact
+            span.counter.transparent: span 03
+            span.title Свежий взгляд <br>на ваш комфорт
+          .paragraph Кликните на фотографию, чтобы увидеть примеры нашей мебели с ценами в условиях реальных интерьеров наших клиентов.
+          .carousel-data
+            .carousel-info
+              .status
+            .carousel-slide-desc
+        .right
+          .carousel
+            .slide(data-desc="Квартира на ул. Нахабиной")
+              .image: a(href="images/s3/1.jpg" style="background-image: url('images/s3/1.jpg')" data-title="Мебель для спальной" data-design="Бесплатно" data-price="10.000 руб" data-time="14 дней").url-image.gallery-item
+            .slide(data-desc="Квартира на ул. Центральной")
+              .image: a(href="images/s3/2.jpg" style="background-image: url('images/s3/2.jpg')" data-title="Мебель для гостинной" data-design="Бесплатно" data-price="25.500 руб" data-time="28 дней").url-image.gallery-item
+            .slide(data-desc="Квартира на ул. Вокзальной")
+              .image: a(href="images/s3/3.jpg" style="background-image: url('images/s3/3.jpg')" data-title="Мебель для спальной" data-price="32.600 руб" data-time="12 дней").url-image.gallery-item
+            .slide(data-desc="Квартира на ул. Западной")
+              .image: a(href="images/s3/5.jpg" style="background-image: url('images/s3/5.jpg')" data-title="Мебель для гостинной" data-price="17.250 руб" data-time="32 дней").url-image.gallery-item
+            .slide(data-desc="Квартира на ул. Западной")
+              .image: a(href="images/s3/6.jpg" style="background-image: url('images/s3/6.jpg')" data-title="Мебель для гостинной" data-price="17.250 руб" data-time="32 дней").url-image.gallery-item
+            .slide(data-desc="Квартира на ул. Западной")
+              .image: a(href="images/s3/7.jpg" style="background-image: url('images/s3/7.jpg')" data-title="Мебель для гостинной" data-price="17.250 руб" data-time="32 дней").url-image.gallery-item
+    section.m_s4
+      .m_full-st.right
+        .wrapper
+          .section-title
+            span.counter 04
+            span.title Получите дизайн-проект<br><span class="orange">бесплатно</span>
+      .wrapper
+        .row
+          .column
+            .image
+              .frame
+              .full.url-image(style="background-image: url('images/s4/image.jpg')")
+          .column
+            .paragraph Отправьте заявку уже сейчас, чтобы заранее согласовать удобное для вас время приезда нашего замерщика.
+            .paragraph Специалист произведет замеры, обсудит детали, а уже очень скоро вы получите бесплатно дизайн-проект будущей мебели.
+        .action
+          a(href="#modal-form" class="popup-with-zoom-anim btn-orange") ВЫЗВАТЬ СПЕЦИАЛИСТА
+    section.m_s5
+      .wrapper
+        .column
+          a(href="#")
+            .vertical-outer
+              .vertical-inner
+                .circle
+                  .circle-shape
+                  .icon
+                .title Нестандартная<br>планировка?
+                .paragraph.small Наша мебель точно войдет в ваши параметры, учитывая каждый угол, косяк или выступ.
+        .column
+          a(href="#")
+            .vertical-outer
+              .vertical-inner
+                .circle
+                  .circle-shape
+                  .icon
+                .title Есть невероятная<br>идея?
+                .paragraph.small Поделитесь идеей с нами и мы поможем воплотить ее в реальность в лучших традициях мебельного ремесла.
+        .column
+          a(href="#")
+            .vertical-outer
+              .vertical-inner
+                .circle
+                  .circle-shape
+                  .icon
+                .title Не можете выбрать<br>из каталогов?
+                .paragraph.small Если вам никак не удается подобрать мебель под себя, то мебель на заказ - это как раз то, что вам нужно.
+    section.m_s6
+      .wrapper
+        .section-title
+          span.counter 06
+          span.title Создайте уют с мебелью, <br>которая никогда вам не наскучит.
+      .item
+        .m_full-st.right
+          .wrapper
+            .section-title
+              .image-bg
+                img(src="images/s6/1b.png" width="298" height="298" style="margin-top:-149px" alt="")
+              .image-icon
+                img(src="images/s6/1i.png" width="60" height="60" style="margin-top:-30px;margin-left:-30px;" alt="")
+              span.title Мебель для любой комнаты
+        .wrapper
+          .row
+            .column
+              .image
+                .frame
+                .full.url-image(style="background-image: url('images/s6/1.jpg')")
+            .column
+              .paragraph Вы можете заказать мебель для гостиной, кухни, детской, спальной, ванной, прихожей или под ключ сразу для всей квартиры/дома.
+      .item
+        .m_full-st.left
+          .wrapper
+            .section-title
+              .image-bg
+                img(src="images/s6/2b.png" width="339" height="182" style="margin-top:-91px" alt="")
+              .image-icon
+                img(src="images/s6/2i.png" width="86" height="46" style="margin-top:-23px;margin-left:-43px;" alt="")
+              span.title Только благородное дерево
+        .wrapper
+          .row
+            .column
+              .paragraph Вы получаете эксклюзивную корпусную мебель, которая сделана из ценных пород дерева. Отличная эстетика и практичность.
+            .column
+              .image
+                .frame
+                .full.url-image(style="background-image: url('images/s6/2.jpg')")
+      .item
+        .m_full-st.right
+          .wrapper
+            .section-title
+              .image-bg
+                img(src="images/s6/3b.png" width="287" height="211" style="margin-top:-105.5px" alt="")
+              .image-icon
+                img(src="images/s6/3i.png" width="74" height="54" style="margin-top:-27px;margin-left:-37px;" alt="")
+              span.title Все виды материалов и стилей
+        .wrapper
+          .row
+            .column
+              .image
+                .frame
+                .full.url-image(style="background-image: url('images/s6/3.jpg')")
+            .column
+              .paragraph Получите всю мебель в одном месте. В вашем распоряжении: классика, модерн, ампир и т.д. Массив дерева, МДФ (шпонированный или покрытый эмалью) и ДСП.
+      .item
+        .m_full-st.left
+          .wrapper
+            .section-title
+              .image-bg
+                img(src="images/s6/4b.png" width="253" height="281" style="margin-top:-140.5px" alt="")
+              .image-icon
+                img(src="images/s6/4i.png" width="59" height="66" style="margin-top:-33px;margin-left:-29.5px;" alt="")
+              span.title Современная обработка древесины
+        .wrapper
+          .row
+            .column
+              .paragraph Наша мебель служит дольше обычного и приятно пахнет, благодаря использованию краски и лака самого высшего качества
+            .column
+              .image
+                .frame
+                .full.url-image(style="background-image: url('images/s6/4.jpg')")
+      .item
+        .m_full-st.right
+          .wrapper
+            .section-title
+              .image-bg
+                img(src="images/s6/5b.png" width="248" height="227" style="margin-top:-50px" alt="")
+              .image-icon
+                img(src="images/s6/5i.png" width="60" height="55" style="margin-top:-27.5px;margin-left:-30px;" alt="")
+              span.title Цены от эконом до премиум
+        .wrapper
+          .row
+            .column
+              .image
+                .frame
+                .full.url-image(style="background-image: url('images/s6/5.jpg')")
+            .column
+              .paragraph Мы соберем мебель согласно вашему бюджету. При этом она все равно будет иметь восхительное качество и уникальность.
+      .action
+        .wrapper
+          a(href="#modal-form" class="popup-with-zoom-anim btn-orange bg-orange") Расчитать стоимость
+    section.m_s7
+      .wrapper
+        .section-title
+          span.counter.transparent: span 07
+          span.title Есть задумка оригинальной лестницы? <br>Обсудите её с дизайнером.
+        .paragraph.pl-st Мы изготавливаем лестницы по европейским технологиям, поэтому они всегда имеют надежную конструкцию и нескользкую поверхность.
+        .types
+          .row
+            .column
+              .image: .url-image.full(style="background-image: url('images/s7/1.jpg')")
+              .title Винтовые лестницы
+            .column
+              .image: .url-image.full(style="background-image: url('images/s7/2.jpg')")
+              .title Г-образные лестницы
+            .column
+              .image: .url-image.full(style="background-image: url('images/s7/3.jpg')")
+              .title П-образные лестницы
+            .column
+              .image: .url-image.full(style="background-image: url('images/s7/4.jpg')")
+              .title Прямые лестницы
+        .guaranteed
+          .row
+            .column
+              .icon: img(src="images/s7/icon-1.png", alt="")
+              .title Гарантия на все лестницы <br>10 лет
+            .column
+              .icon: img(src="images/s7/icon-2.png", alt="")
+              .title Только сухие материалы <br>экстра-класса
+            .column
+              .icon: img(src="images/s7/icon-4.png", alt="")
+              .title Используем не только дерево, <br>но и стекло, и ковку.
+    section.m_s8
+      .wrapper
+        .left
+          .carousel-stairs
+            .slide(data-price="300 000")
+              .image: .url-image.full(style="background-image: url('images/s8/1.jpg')")
+            .slide(data-price="1 400 000")
+              .image: .url-image.full(style="background-image: url('images/s8/2.jpg')")
+            .slide(data-price="500 000")
+              .image: .url-image.full(style="background-image: url('images/s8/3.jpg')")
+            .slide(data-price="600 000")
+              .image: .url-image.full(style="background-image: url('images/s8/4.jpg')")
+            .slide(data-price="700 000")
+              .image: .url-image.full(style="background-image: url('images/s8/5.jpg')")
+        .right
+          .section-title.compact
+            span.counter.transparent: span 08
+            span.title Готовые решения <br>лестниц
+          .carousel-stairs-data
+            .carousel-stairs-price
+            .carousel-stairs-navs
+              .status
+    section.m_s9
+      .wrapper
+        .image
+        .section-title.compact
+          span.counter 09
+          span.title Двери от Планета Дерева <br>славятся неповторимым дизайном
+        .paragraph.small Мы изготавливаем двери с учетом любых стилевых и тоновых решений из ценных пород дерева. Наши двери "дышат", подстраиваясь под температуру и влажность вашего дома.
+        .paragraph.small Вы можете выбрать дверь из наших работ и немного изменить под себя, либо собрать дверь с нуля. Производство двери занимает от 12 рабочих дней.
+        .action
+          a(href="#modal-form" class="popup-with-zoom-anim btn-orange") Заказать дверь
+    section.m_s10
+      .wrapper
+        .section-title.tsh Восхищайтесь удобной и красивой <br>мебелью каждый день
+        .row
+          .column
+            .icon
+            .paragraph.tsh Мы узнаем ваши предпочтения в цветах, материалах, обивке, форме, размерах и функциональности
+          .column
+            .icon
+            .paragraph.tsh Мебель исключительно сделана под вас и гарантированно не имеет аналогов в мебельном мире
+          .column
+            .icon
+            .paragraph.tsh Дизайнеры с богатым опытом воссоздадут любую вашу идею в нечто прекрасное и необыкновенное
+    section.m_s11
+      .wrapper
+        .section-title
+          span.counter 11
+          span.title Путь мебели: <br>отзвонка до вашего дома
+        .row
+          .column
+            .icon
+              img(src="images/s11/1.png" alt="")
+            .counter 01
+            .paragraph Бесплатная <br>консультация <br>по телефону
+          .column
+            .icon
+              img(src="images/s11/2.png" alt="")
+            .counter 02
+            .paragraph Замер и согласование тех. задания
+          .column
+            .icon
+              img(src="images/s11/3.png" alt="")
+            .counter 03
+            .paragraph Визуализация в дизайн-проекте
+          .column
+            .icon
+              img(src="images/s11/4.png" alt="")
+            .counter 04
+            .paragraph Изготовление <br>мебели по чертежу
+          .column
+            .icon
+              img(src="images/s11/5.png" alt="")
+            .counter 05
+            .paragraph Доставка и <br>установка на объекте
+    section.m_s12
+      .wrapper
+        .frame
+          .quote.tsh.
+            В создании мебели мы придерживаемся четырех принципов:<br>
+            технологичность, эстетичность,<br>
+            разумный подход и последовательность
+    section.m_s13
+      .wrapper
+        .section-title.compact
+          span.counter 13
+          span.title Оставьте заявку уже сейчас,
+        .paragraph чтобы получить эксклюзивную мебель, созданную конкретно под вашу планировку, образ жизни и предпочтения в интерьере.
+        .frame
+          .form-wrap
+            form(action="form.php" method="post" class="form")
+              .row-label Когда вам удобно обсудить заказ?
+              .row
+                .form-label
+                  input(type="text" placeholder="Часы" pattern="[0-9]" maxlength="2" name="hours" class="form-input" autocomplete="off")
+                .form-label
+                  input(type="text" placeholder="Минуты" pattern="[0-9]" maxlength="2" name="minutes" class="form-input" autocomplete="off")
+              .row-label Введите ваш номер телефона
+              .form-label
+                input(type="tel" placeholder="+7 900 800 70 60" name="tel" class="form-input" required="required" autocomplete="off")
+              input(type="hidden" name="input_type")
+              input(type="submit" class="form-submit btn-orange bg-orange" value="Жду звонка")
+    footer.m_footer
+      .wrapper
+        .column
+          .heading Наши контакты
+          .logo
+        .column
+          .row
+            span.label Телефон:
+            span.value +7 (495) 973 5252
+          .row
+            span.label Email:
+            span.value info@planetadereva.ru
+          .row
+            span.label Адрес:
+            span.value г. Москва, Волоколамское шоссе 100.
+          .row
+            span.label Режим работы:
+            span.value ежедневно с 9:00 до 20:00
+    // Popups
+    a(class="popup-with-zoom-anim" id="success" href="#modal-success")
+    div(id="modal-success" class="zoom-anim-dialog mfp-hide")
+      .success-image
+        .image
+          .frame
+      .success
+        .vertical-outer
+          .vertical-inner
+            .heading Благодарим за заявку!
+            .small-heading Наш менеджер скоро свяжется с Вами.
+    div(id="modal-form" class="zoom-anim-dialog mfp-hide")
+      .form-title
+        .vertical-outer
+          .vertical-inner
+            .heading Заполните форму
+            .small-heading чтобы заказать звонок
+      .frame
+        .form-wrap
+          form(action="form.php" method="post" class="form")
+            .row-label Когда вам удобно обсудить заказ?
+            .row
+              .form-label
+                input(type="text" placeholder="Часы" pattern="[0-9]" maxlength="2" name="hours" class="form-input" autocomplete="off")
+              .form-label
+                input(type="text" placeholder="Минуты" pattern="[0-9]" maxlength="2" name="minutes" class="form-input" autocomplete="off")
+            .row-label Введите ваш номер телефона
+            .form-label
+              input(type="tel" placeholder="+7 900 800 70 60" name="tel" class="form-input" required="required" autocomplete="off")
+            input(type="hidden" name="input_type")
+            input(type="submit" class="form-submit btn-orange bg-orange" value="Жду звонка")
+    // JS
+    script(src='js/jquery.min.js')
+    script(src='js/plugins.js')
+    script(src='js/app.js')

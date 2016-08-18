@@ -1,0 +1,140 @@
+.m_s5
+  position relative
+  z-index 100
+  height 520px
+  background url("../images/s5/bg.jpg") no-repeat 50%
+  background-size cover
+  box-shadow inset 0 0 5px rgba(0,0,0,.2)
+  background-attachment fixed
+  .vertical-inner
+    position relative
+    z-index 10
+  .column
+    position relative
+    float left
+    width 33.333%
+    height 100%
+    padding 0 30px
+    text-align center
+    background-repeat no-repeat
+    background-position 50%
+    background-size cover
+    &:nth-child(1)
+      background-image url("../images/s5/1.jpg")
+      .icon
+        width 54px
+        height 53px
+        margin-left -(@width/2)
+        margin-top -(@height/2)
+        background-position 0 0
+      &:hover
+        .icon
+          background-position -77px 0
+      .title:after
+        content "01"
+    &:nth-child(2)
+      background-image url("../images/s5/2.jpg")
+      .icon
+        width 48px
+        height 58px
+        margin-left -(@width/2)
+        margin-top -(@height/2)
+        background-position 0 -77px
+      &:hover
+        .icon
+          background-position -77px -77px
+      .title:after
+        content "02"
+    &:nth-child(3)
+      background-image url("../images/s5/3.jpg")
+      .icon
+        width 67px
+        height 60px
+        margin-left -(@width/2)
+        margin-top -(@height/2)
+        background-position 0 -170px
+      &:hover
+        .icon
+          background-position -77px -170px
+      .title:after
+        content "03"
+    a
+      display block
+      width 100%
+      height 100%
+      &:after
+        anim()
+        content ''
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+        background #4c3518
+        opacity .85
+      &:hover
+        &:after
+          opacity .7
+        .circle-shape
+          opacity .5
+        .title, .paragraph
+          color #fff
+        .paragraph:after
+          opacity 1
+    .circle
+      position relative
+      width 125px
+      height 125px
+      margin 20px auto
+      .icon
+        position absolute
+        left 50%
+        top 50%
+        background-image url('../images/s5/icons.png')
+        background-repeat no-repeat
+      .circle-shape
+        anim()
+        width 100%
+        height 100%
+        border-radius 50%
+        opacity 0
+        background: rgba(246,157,32,1);
+        background: -moz-linear-gradient(top, rgba(246,157,32,1) 0%, rgba(255,123,0,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,157,32,1)), color-stop(100%, rgba(255,123,0,1)));
+        background: -webkit-linear-gradient(top, rgba(246,157,32,1) 0%, rgba(255,123,0,1) 100%);
+        background: -o-linear-gradient(top, rgba(246,157,32,1) 0%, rgba(255,123,0,1) 100%);
+        background: -ms-linear-gradient(top, rgba(246,157,32,1) 0%, rgba(255,123,0,1) 100%);
+        background: linear-gradient(to bottom, rgba(246,157,32,1) 0%, rgba(255,123,0,1) 100%);
+    .title, .paragraph
+      color #dfc6af
+    .title
+      brad()
+      position relative
+      font-size 24px
+      margin-bottom 20px
+      &:after
+        position absolute
+        left 0
+        width 100%
+        height 90px
+        line-height 90px
+        text-align center
+        margin-top -45px
+        font-size 90px
+        color rgba(0,0,0,.3)
+        z-index -1
+    .paragraph
+      position relative
+      height 90px
+      &:after
+        anim()
+        content ''
+        width 95px
+        height 2px
+        position absolute
+        left 50%
+        bottom 0px
+        opacity 0
+        margin-left -(@width/2)
+        background rgba(255,255,255,.3)
+

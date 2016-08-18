@@ -1,0 +1,75 @@
+.m_s1
+  position relative
+  background url("../images/s1/bg.jpg") no-repeat 50%
+  background-size cover
+  padding-top 120px // Header height
+  height 100%
+  html.no-touchevents &
+    background-attachment fixed
+  @media screen and (max-height: 680px)
+    height 680px
+    padding-top 50px
+  .scroll-down
+    cursor pointer
+    width 26px
+    height 26px
+    position fixed
+    left 50%
+    bottom 26px
+    margin-left -(@width/2)
+    background url("../images/s1/scrolldown.png") no-repeat 0 0
+    html.touchevents &
+      display none
+    @media screen and (max-height: 680px)
+      display none
+  .frame
+    z-index 2
+    left 50%
+    top 50%
+    width 1140px
+    height 457px
+    margin-left -(@width/2)
+    margin-top -280px
+    background url("../images/s1/frame.png") no-repeat 0 0
+    text-align center
+    color #fff
+    html.no-touchevents &
+      @media screen and (min-height: 680px)
+        position fixed
+    html.touchevents &
+      position absolute
+    @media screen and (max-height: 840px)
+      margin-top -225px
+    @media screen and (max-height: 680px)
+      position absolute
+    @media screen and (max-width: 1250px)
+      background none
+      width 100%
+      margin-left 0
+      left 0
+    h1
+      brad()
+      text-transform uppercase
+      font-size 38px
+      margin-bottom 35px
+    .paragraph
+      max-width 80%
+      margin 0 auto
+  .action
+    position absolute
+    left 50%
+    bottom -27px
+    width 476px
+    height 68px
+    line-height 64px
+    margin-left -(@width/2)
+    a
+      regular()
+      display block
+      width 100%
+      height 100%
+      color $orange
+      font-size 18px
+      border-radius 50px
+      &:hover
+        color #fff

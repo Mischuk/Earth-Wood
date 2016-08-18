@@ -1,0 +1,56 @@
+.page-title
+  font-size 30px
+  line-height 1
+  text-transform uppercase
+  color #000
+
+.section-title
+  brad()
+  // overflow hidden
+  position relative
+  font-size 36px
+  line-height 75px
+  color $black
+  padding-left 200px
+  margin-bottom 60px
+  span.orange
+    color #f67a03
+  .title,
+  .counter
+    display inline-block
+    vertical-align middle
+  .title
+    line-height 1
+  .counter
+    position absolute
+    left 0
+    top 0
+    font-size 90px
+    line-height 75px
+    color #eee
+    margin-right 20px
+    padding-left 50px
+    &.transparent
+      span
+        color #858585
+        opacity .15
+    &:after
+      content ''
+      width 95px
+      height 2px
+      background $orange
+      position absolute
+      left 0
+      top 50%
+      margin-top -1px
+  &.compact
+    padding-left 0
+    padding-top 90px
+
+.paragraph
+  &.small
+    font-size 16px
+  &.large
+    font-size 22px
+.tsh
+  text-shadow 1px 1px 1px rgba(0,0,0,.7)

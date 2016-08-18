@@ -1,0 +1,133 @@
+.m_examples
+  .mfp-content
+    text-align center
+    .frame
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 100%
+      padding-bottom 115px
+      padding-top 15px
+      padding-left 15px
+      padding-right 15px
+      .lines
+        width 100%
+        height 100%
+        border 15px solid #fff
+  .mfp-arrow
+    display none !important
+  .mfp-figure
+    overflow hidden
+    position relative
+    padding-bottom 100px
+  .mfp-top-bar
+    position absolute
+    left 50%
+    top 0
+    width 80%
+    margin-left -40%
+    .mfp-title
+      brad()
+      font-size 24px
+      line-height 1
+      position relative
+      width 100%
+      padding 20px 65px 20px 35px
+      background #262626
+    .mfp-close
+      height 50px
+      width 50px
+      right 0
+      left auto
+      top 50%
+      margin-top -25px
+      padding-right 0
+      font-size 0
+      cursor pointer
+      border-left 1px solid #1b1b1b
+      &:after
+        content ''
+        position absolute
+        left 50%
+        top 50%
+        background url('../images/close.png') no-repeat 0 0
+        width 17px
+        height 17px
+        margin-left -(@width/2)
+        margin-top -(@height/2)
+        opacity 1
+      &:hover
+        &:after
+          background-position 1px -33px
+  .mfp-bottom-bar
+    background #fff
+    margin-top -100px
+    padding-right 230px
+    .mfp-navs
+      right 0
+      top 0
+      width 230px
+      height 100px
+      position absolute
+      padding 0 75px
+      &:after
+        content ''
+        position absolute
+        left 0
+        height 66px
+        width 1px
+        background #b2b2b2
+        top 50%
+        margin-top -(@height/2)
+      .mfp-custom-arrows
+        cursor pointer
+        width 25px
+        height 17px
+        position absolute
+        top 50%
+        margin-top -(@height/2)
+        z-index 10
+        &.mfp-prev
+          left 30px
+          background url('../images/arrows.png') no-repeat -33px -48px
+          &:hover
+            background-position -33px -24px
+        &.mfp-next
+          right 30px
+          background url('../images/arrows.png') no-repeat 0 -48px
+          &:hover
+            background-position 0 -24px
+      .mfp-counter
+        brad()
+        position static
+        color #a1a1a1
+        font-size 20px
+        line-height 100px
+        .large
+          font-size 26px
+        .curr
+          display inline-block
+          vertical-align bottom
+          color $black
+          font-size 26px
+    .mfp-columns
+      height 100px
+      background #fff
+      display table
+      width 100%
+      line-height 20px
+      padding 0 30px
+      .column
+        display table-cell
+        vertical-align middle
+        padding-right 10px
+      .column-title
+        regular()
+        font-size 16px
+        text-align left
+      .column-desc
+        brad()
+        color #f67a03
+        font-size 18px
+        text-align left

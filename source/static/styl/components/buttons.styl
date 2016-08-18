@@ -1,0 +1,72 @@
+// Mobile burger button
+.mobile-menu-trigger
+  display block
+  position absolute
+  right 15px
+  top 50%
+  width 40px
+  height 40px
+  margin-top -(@height/2)
+  border 2px solid #fff
+  border-radius 50%
+  cursor pointer
+  @media screen and (min-width: 850px)
+    display none
+  &:after,
+  &:before,
+  span
+    anim()
+    content ''
+    position absolute
+    left 50%
+    width 20px
+    margin-left -10px
+    height 2px
+    background #fff
+  &:before
+    top 10px
+  &:after
+    bottom 10px
+  span
+    top 50%
+    margin-top -1.5px
+  &.open
+    span
+      opacity 0
+      transform translateX(-5px)
+    &:after
+      transform: rotate(135deg) translate(-6px, 6px)
+    &:before
+      transform: rotate(-135deg) translate(-4px, -4px)
+
+.btn-orange
+  regular()
+  display block
+  border 2px solid $orange
+  text-align center
+  &:hover
+    background: #f69e20;
+    background: -moz-linear-gradient(top,  #f69e20 0%, #ff7e00 100%);
+    background: -webkit-linear-gradient(top,  #f69e20 0%,#ff7e00 100%);
+    background: linear-gradient(to bottom,  #f69e20 0%,#ff7e00 100%);
+    border-bottom 2px solid #ff7e00
+  &:active
+    border-top 2px solid #ff7e00
+    border-bottom 2px solid #f69e20
+    background: #ff7e00;
+    background: -moz-linear-gradient(top,  #ff7e00 0%, #f69e20 100%);
+    background: -webkit-linear-gradient(top,  #ff7e00 0%,#f69e20 100%);
+    background: linear-gradient(to bottom,  #ff7e00 0%,#f69e20 100%);
+  &.bg-orange
+    background: #f69e20;
+    background: -moz-linear-gradient(top,  #f69e20 0%, #ff7e00 100%);
+    background: -webkit-linear-gradient(top,  #f69e20 0%,#ff7e00 100%);
+    background: linear-gradient(to bottom,  #f69e20 0%,#ff7e00 100%);
+    border-bottom 2px solid #ff7e00
+    &:hover
+      border-top 2px solid #ff7e00
+      border-bottom 2px solid #f69e20
+      background: #ff7e00;
+      background: -moz-linear-gradient(top,  #ff7e00 0%, #f69e20 100%);
+      background: -webkit-linear-gradient(top,  #ff7e00 0%,#f69e20 100%);
+      background: linear-gradient(to bottom,  #ff7e00 0%,#f69e20 100%);

@@ -1,0 +1,94 @@
+.m_s7
+  position relative
+  z-index 100
+  padding 80px 0
+  background url("../images/bg-wood.jpg") no-repeat 50% 50%
+  background-size cover
+  box-shadow inset 0 0 5px rgba(0,0,0,.2)
+  background-attachment fixed
+  .pl-st
+    padding-left 200px
+    margin-top -30px
+  .types
+    margin-top 50px
+    margin-bottom 50px
+    .column
+      position relative
+      float left
+      width 25%
+      padding 0 15px
+      .image
+        position relative
+        height 340px
+        &:after
+          anim()
+          content ''
+          position absolute
+          left 15px
+          bottom 0
+          width 124px
+          height 79px
+          border 15px solid rgba(255,255,255,.5)
+          border-bottom none
+        &:before
+          anim()
+          content ''
+          position absolute
+          left 15px
+          bottom -45px
+          height 45px
+          width 124px
+          border 15px solid rgba(255,255,255,1)
+          border-top none
+          z-index 1
+        &:hover
+          &:after
+            height 265px
+            bottom 60px
+            width 225px
+            border-color rgba(255,255,255,.5)
+          &:before
+            bottom 15px
+            width 225px
+            border-color rgba(255,255,255,.5)
+      .title
+        bold()
+        font-size 18px
+        margin-top 65px
+        text-align center
+  .guaranteed
+    position relative
+    padding-top 50px
+    text-align center
+    &:after
+      content ''
+      width 760px
+      height 2px
+      background rgba(255,255,255,.5)
+      position absolute
+      left 50%
+      margin-left -(@width/2)
+      top 0
+    .column
+      display inline-block
+      vertical-align top
+      width 32%
+      .icon
+        width 125px
+        height 125px
+        margin 0 auto
+        line-height 125px
+        border-radius 50%
+        background: rgba(246,157,32,1);
+        background: -moz-linear-gradient(top, rgba(246,157,32,1) 0%, rgba(255,123,0,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,157,32,1)), color-stop(100%, rgba(255,123,0,1)));
+        background: -webkit-linear-gradient(top, rgba(246,157,32,1) 0%, rgba(255,123,0,1) 100%);
+        background: -o-linear-gradient(top, rgba(246,157,32,1) 0%, rgba(255,123,0,1) 100%);
+        background: -ms-linear-gradient(top, rgba(246,157,32,1) 0%, rgba(255,123,0,1) 100%);
+        background: linear-gradient(to bottom, rgba(246,157,32,1) 0%, rgba(255,123,0,1) 100%);
+        img
+          display inline-block
+          vertical-align middle
+      .title
+        font-size 20px
+        margin-top 20px

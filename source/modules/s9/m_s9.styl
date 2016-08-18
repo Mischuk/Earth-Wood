@@ -1,0 +1,41 @@
+.m_s9
+  background #fff
+  position relative
+  z-index 100
+  padding 80px 0
+  .section-title
+    margin-bottom 40px
+  .paragraph
+    padding 10px 0
+    padding-right 445px
+  .action
+    margin-top 40px
+    padding-left 20px
+    a
+      display block
+      width 350px
+      height 70px
+      line-height 66px
+      border-radius 50px
+      color #f69e20
+      text-transform uppercase
+      &:hover
+        color #fff
+  .image
+    position absolute
+    right 15px
+    top 24px
+    height 410px
+    width 665px
+    border 15px solid #eaeaea
+    z-index -1
+    &:after
+      content ''
+      width 436px
+      height 468px
+      position absolute
+      right -45px
+      bottom -15px
+      background url("../images/s9/image.png") no-repeat 0 0
+      @media screen and (max-width: 1250px)
+        right 0

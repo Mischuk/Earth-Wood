@@ -1,0 +1,118 @@
+.m_s2
+  position relative
+  z-index 100
+  padding 60px 0
+  background #fff
+  .row
+    display table
+    width 100%
+    &:after, &:before
+      display none
+
+  .column
+    position relative
+    float left
+    width 33.333%
+    height 100%
+    padding 15px
+    text-align center
+    cursor default
+    &:nth-child(1):hover
+      .icon
+        background-position -73px 0 !important
+    &:nth-child(2):hover
+      .icon
+        background-position -73px -76px !important
+    &:nth-child(3):hover
+      .icon
+        background-position -73px -157px !important
+    &:hover
+      .url-image
+        width 100%
+        height 100%
+        margin-left -50%
+        margin-top -46%
+      .circle-image
+        transform scale(1) !important
+      .desc
+        &:after
+          transform scale(0) rotate(180deg)
+        &:before
+          opacity 0
+
+    .url-image
+      a(0.5s)
+      position absolute
+      left 50%
+      top 50%
+      margin-left -40%
+      margin-top -40%
+      width 80%
+      height 80%
+      opacity .3
+    .wrap
+      position relative
+      z-index 1
+      background #fff
+      padding-top 50px
+      .circle
+        position relative
+        width 126px
+        height 126px
+        margin 0 auto
+        .circle-image
+          a(0.5s)
+          position absolute
+          left 0
+          top 0
+          width 100%
+          height 100%
+          transform scale(0)
+        .icon
+          position absolute
+          left 50%
+          top 50%
+          width 60px
+          height 60px
+          margin-left -(@width/2)
+          margin-top -(@height/2)
+          background-image url('../images/s2/icons.png')
+          background-repeat no-repeat
+          &.icon-1
+            background-position 0 0
+          &.icon-2
+            background-position 0 -76px
+          &.icon-3
+            background-position -1px -157px
+      .desc
+        position relative
+        margin-top 25px
+        &:before
+          a(0.5s)
+          content ''
+          position absolute
+          width 95px
+          height 2px
+          background #e4e4e4
+          bottom 0
+          left 50%
+          margin-left -(@width/2)
+        &:after
+          a(0.5s)
+          content ''
+          width 114px
+          height 102px
+          border 15px solid #f3f3f3
+          position absolute
+          left 50%
+          top 0
+          margin-left -(@width/2)
+          margin-top -5px
+          z-index -1
+        .title
+          medium()
+          margin-bottom 10px
+          font-size 20px
+        .paragraph
+          height 86px
+          overflow hidden

@@ -1,0 +1,51 @@
+.m_full-st
+  overflow hidden
+  position absolute
+  width 100%
+  top 140px
+  left 0
+  z-index 20
+  &.left
+    .wrapper
+      padding-right 260px
+      .section-title
+        padding-left 365px
+        padding-right 80px
+        &:after
+          content ''
+          position absolute
+          top 0
+          left -2000px
+          height 100%
+          width 2000px
+          background #f3f3f3
+  &.right
+    .wrapper
+      padding-left 260px
+    .section-title
+      padding-left 80px
+      padding-right 200px
+      &:after
+        content ''
+        position absolute
+        top 0
+        right -2000px
+        height 100%
+        width 2000px
+        background #f3f3f3
+    .counter
+      right 10px
+      left auto
+      top 50%
+      height 75px
+      margin-top -(@height/2)
+      &:after
+        left auto
+        right -15px
+  .section-title
+    overflow visible
+    position relative
+    margin-bottom 0
+    padding-top 20px
+    padding-bottom 25px
+    background #f3f3f3

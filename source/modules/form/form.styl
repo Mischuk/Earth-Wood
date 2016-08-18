@@ -1,0 +1,76 @@
+/* Форма */
+$placeholder-color = #9d9d9d
+
+.form
+  &-input   /* input */
+    light()
+    width 100%
+    border 2px solid #9d9d9d
+    border-top none
+    border-left none
+    border-right none
+    text-align left
+    color $black
+    display block
+    margin 0 0 5px
+    padding 7px 0
+    outline none
+    &:focus
+      color #000
+    &::-webkit-input-placeholder
+      color $placeholder-color
+    &::-moz-placeholder
+      color $placeholder-color /* Firefox 19+ */
+    &:-moz-placeholder
+      color $placeholder-color /* Firefox 18- */
+    &:-ms-input-placeholder
+      color $placeholder-color
+    &-label
+      position relative
+    &-submit   /* Кнопка submit */
+      font 300 20px 'arial', sans-serif
+      color #fff
+      background #F98500
+      border none
+      width 100%
+      text-align center
+      padding 15px 0
+      cursor pointer
+      outline none
+      transition background .3s
+      -webkit-appearance none
+      &:hover
+          background #339E36
+label.error
+  display none !important
+
+form
+  position relative
+  z-index 50
+  height 100%
+  margin-left auto
+  width 370px
+  padding-top 50px
+  .row-label
+    margin-bottom 10px
+    & + .form-label
+      padding-right 75px
+  .row
+    clearfix()
+    margin-bottom 45px
+    .form-label
+      float left
+      width 50%
+      padding-right 75px
+  .form-submit
+    position absolute
+    left 0
+    bottom -35px
+    text-transform uppercase
+    width 305px
+    color #fff
+    border-radius 50px
+    height 70px
+    line-height 70px
+    &:hover
+      color #915306

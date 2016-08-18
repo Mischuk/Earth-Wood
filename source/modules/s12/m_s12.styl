@@ -1,0 +1,54 @@
+.m_s12
+  position relative
+  z-index 100
+  background url("../images/s12/bg.jpg") no-repeat 50%
+  background-size cover
+  background-attachment fixed
+  box-shadow inset 0 0 5px rgba(0,0,0,0.2)
+  padding 80px 0
+  .frame
+    brad()
+    position relative
+    padding 145px 0
+    color #fff
+    font-size 30px
+    text-align center
+    &:before
+      content ''
+      background: url('../images/s12/frame.png') no-repeat 0 0;
+      width: 855px;
+      height: 97px;
+      position absolute
+      left 50%
+      top 0
+      margin-left -(@width/2)
+    &:after
+      content ''
+      background: url('../images/s12/frame.png') no-repeat 0 -245px;
+      width: 855px;
+      height: 138px;
+      position absolute
+      left 50%
+      bottom 0
+      margin-left -(@width/2)
+  .quote
+    position relative
+    &:after
+      content ''
+      width 89px
+      height 61px
+      background url("../images/s12/q.png") no-repeat 0 0
+      position absolute
+      left 50%
+      margin-left -(@width/2)
+      top -92px
+      opacity .25
+    &:before
+      content ''
+      width 95px
+      height 2px
+      background $orange
+      bottom -40px
+      position absolute
+      left 50%
+      margin-left -(@width/2)
