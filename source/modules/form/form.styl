@@ -51,17 +51,32 @@ form
   margin-left auto
   width 370px
   padding-top 50px
+  @media screen and (max-width: 480px)
+    margin 0 auto
+    width 100%
+    padding-left 15px
+    padding-right 15px
+  @media screen and (max-width: 420px)
+    padding-top 25px
   .row-label
     margin-bottom 10px
     & + .form-label
       padding-right 75px
+      @media screen and (max-width: 480px)
+        padding-right 10px
+        padding-left 10px
   .row
     clearfix()
     margin-bottom 45px
+    @media screen and (max-width: 380px)
+      margin-bottom 30px
     .form-label
       float left
       width 50%
       padding-right 75px
+      @media screen and (max-width: 480px)
+        padding-left 10px
+        padding-right 10px
   .form-submit
     position absolute
     left 0
@@ -72,5 +87,12 @@ form
     border-radius 50px
     height 70px
     line-height 70px
+    @media screen and (max-width: 480px)
+      left 50%
+      margin-left -152px
+    @media screen and (max-width: 400px)
+      margin-left 5%
+      width 90%
+      left 0
     &:hover
       color #915306

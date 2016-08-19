@@ -3,6 +3,9 @@
   z-index 100
   background #dfdbd6
   padding 80px 0
+  @media screen and (max-width: 767px)
+    padding 30px 0 130px 0
+
   &:after
     content ''
     width 300px
@@ -17,21 +20,57 @@
   .column
     float left
     width 50%
+    @media screen and (max-width: 767px)
+      width 100%
+      float none
     .heading
       brad()
       font-size 34px
+      @media screen and (max-width: 767px)
+        text-align center
+        margin-bottom 20px
+      @media screen and (max-width: 480px)
+        text-align left
     .logo
       width 200px
       height 83px
       margin-top 25px
       background url("../images/logo-f.png") no-repeat 0 0
+      @media screen and (max-width: 767px)
+        position absolute
+        left 50%
+        margin-left -100px
+        bottom -100px
   .row
+    position relative
     padding 9px 0
+    padding-left 180px
+    @media screen and (max-width: 800px)
+      padding-left 160px
+    @media screen and (max-width: 767px)
+      width 400px
+      margin 0 auto
+    @media screen and (max-width: 480px)
+      width 100%
+      padding-left 0
     .label
       black()
-      display inline-block
-      vertical-align middle
+      position absolute
+      left 0
+      top 9px
       color #c0a077
       text-align right
       width 180px
       padding-right 20px
+      @media screen and (max-width: 800px)
+        font-size 14px
+        width 160px
+      @media screen and (max-width: 480px)
+        position static
+        display block
+        text-align left
+        width 100%
+    .value
+      @media screen and (max-width: 800px)
+        font-size 16px
+

@@ -13,14 +13,26 @@
   color $black
   padding-left 200px
   margin-bottom 60px
+  @media screen and (max-width: 767px)
+    font-size 32px
+  @media screen and (max-width: 680px)
+    font-size 28px
+  @media screen and (max-width: 568px)
+    padding-left 0
+    text-align center
   span.orange
     color #f67a03
+  br
+    @media screen and (max-width: 1200px)
+      display none
   .title,
   .counter
     display inline-block
     vertical-align middle
   .title
     line-height 1
+    @media screen and (max-width: 568px)
+      padding-top 10px
   .counter
     position absolute
     left 0
@@ -30,6 +42,11 @@
     color #eee
     margin-right 20px
     padding-left 50px
+    @media screen and (max-width: 568px)
+      position static
+      padding-left 0
+      margin-right 0
+      margin-bottom 20px
     &.transparent
       span
         color #858585
@@ -43,14 +60,27 @@
       left 0
       top 50%
       margin-top -1px
+      @media screen and (max-width: 568px)
+        left 50%
+        margin-left -47.5px
+        top 95px
   &.compact
     padding-left 0
     padding-top 90px
+    @media screen and (max-width: 1200px)
+      padding-top 0
+      padding-left 200px
+    @media screen and (max-width: 568px)
+      padding-left 0
 
 .paragraph
+  @media screen and (max-width: 640px)
+    font-size 16px
   &.small
     font-size 16px
   &.large
     font-size 22px
+    @media screen and (max-width: 640px)
+      font-size 18px
 .tsh
   text-shadow 1px 1px 1px rgba(0,0,0,.7)

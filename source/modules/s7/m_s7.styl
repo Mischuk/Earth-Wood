@@ -5,10 +5,15 @@
   background url("../images/bg-wood.jpg") no-repeat 50% 50%
   background-size cover
   box-shadow inset 0 0 5px rgba(0,0,0,.2)
-  background-attachment fixed
+  @media screen and (max-width: 767px)
+    padding 30px 0
+  html.no-touchevents &
+    background-attachment fixed
   .pl-st
     padding-left 200px
     margin-top -30px
+    @media screen and (max-width: 568px)
+      padding-left 0
   .types
     margin-top 50px
     margin-bottom 50px
@@ -17,9 +22,16 @@
       float left
       width 25%
       padding 0 15px
+      @media screen and (max-width: 767px)
+        width 50%
+      @media screen and (max-width: 568px)
+        width 100%
+        padding 0
       .image
         position relative
         height 340px
+        @media screen and (max-width: 568px)
+          height 200px
         &:after
           anim()
           content ''
@@ -30,6 +42,8 @@
           height 79px
           border 15px solid rgba(255,255,255,.5)
           border-bottom none
+          @media screen and (max-width: 1200px)
+            display none
         &:before
           anim()
           content ''
@@ -41,6 +55,8 @@
           border 15px solid rgba(255,255,255,1)
           border-top none
           z-index 1
+          @media screen and (max-width: 1200px)
+            display none
         &:hover
           &:after
             height 265px
@@ -56,10 +72,17 @@
         font-size 18px
         margin-top 65px
         text-align center
+        @media screen and (max-width: 1200px)
+          margin-top 10px
+        @media screen and (max-width: 767px)
+          margin-bottom 30px
   .guaranteed
     position relative
     padding-top 50px
     text-align center
+    @media screen and (max-width: 767px)
+      padding-top 0
+      margin-top -30px
     &:after
       content ''
       width 760px
@@ -69,10 +92,17 @@
       left 50%
       margin-left -(@width/2)
       top 0
+      @media screen and (max-width: 992px)
+        display none
     .column
       display inline-block
       vertical-align top
       width 32%
+      @media screen and (max-width: 767px)
+        width 48%
+      @media screen and (max-width: 568px)
+        display block
+        width 100%
       .icon
         width 125px
         height 125px
@@ -92,3 +122,11 @@
       .title
         font-size 20px
         margin-top 20px
+        @media screen and (max-width: 992px)
+          br
+            display none
+        @media screen and (max-width: 767px)
+          margin-top 10px
+          margin-bottom 30px
+          width 240px
+          margin 10px auto 30px

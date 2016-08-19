@@ -4,23 +4,39 @@
   z-index 100
   padding 80px 0
   background #fff
+  @media screen and (max-width: 767px)
+    padding 30px 0
   .item
     position relative
     &:nth-child(even)
       .column
         width 40%
+        @media screen and (max-width: 992px)
+          width 100%
         &:last-child
           width 60%
           padding-top 210px
+          @media screen and (max-width: 992px)
+            padding-top 0
+            width 100%
     &:nth-child(odd)
       .column
         width 60%
+        @media screen and (max-width: 992px)
+          width 100%
         &:first-child
           padding-top 210px
+          @media screen and (max-width: 992px)
+            padding-top 0
         &:last-child
           width 40%
+          @media screen and (max-width: 992px)
+            width 100%
         .frame:after
           opacity .75
+      @media screen and (max-width: 992px)
+        .section-title .title
+          text-align right
     &:hover
       .url-image
         filter grayscale(0)
@@ -31,6 +47,8 @@
       &.right
         .section-title
           padding-left 50px
+          @media screen and (max-width: 992px)
+            padding-left 0
           .image-icon,
           .image-bg
             right 15px
@@ -41,6 +59,10 @@
         .section-title
           padding-right 25px
           padding-left 340px
+          @media screen and (max-width: 992px)
+            padding-left 100px
+          @media screen and (max-width: 767px)
+            padding-left 0
           .image-icon,
           .image-bg
             left 15px
@@ -66,6 +88,8 @@
           position absolute
           top 50%
           left 50%
+          @media screen and (max-width: 767px)
+            display none
       .image-bg
         position absolute
         top 0
@@ -79,10 +103,14 @@
     float left
   .paragraph
     padding 10px 20px 10px 90px
+    @media screen and (max-width: 992px)
+      padding 15px
   .image
     position relative
     height 305px
     padding 15px
+    @media screen and (max-width: 992px)
+      margin-top 15px
     .url-image
       a(1s)
       filter grayscale(1)
@@ -102,6 +130,9 @@
       border 15px solid #fff
   .action
     margin-top 30px
+    @media screen and (max-width: 568px)
+      text-align center
+      margin-top -30px
     a
       display block
       width 475px
@@ -110,3 +141,20 @@
       border-radius 50px
       color #fff
       margin 0 auto
+      @media screen and (max-width: 568px)
+        display inline-block
+        vertical-align middle
+        width 90%
+        padding 10px 20px
+        line-height 1
+        height auto
+  @media screen and (max-width: 992px)
+    .m_full-st
+      &.right,
+      &.left
+        background #f3f3f3
+        .section-title
+          margin-bottom 0
+        .wrapper
+          padding-left 15px
+          padding-right 15px

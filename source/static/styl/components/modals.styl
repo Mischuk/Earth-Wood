@@ -6,6 +6,9 @@
   position: relative;
   height 460px
   padding 50px
+  @media screen and (max-width: 992px)
+    padding 40px 20px
+    height 570px
   .mfp-close
     background url('../images/close.png') no-repeat 0 -33px
     width 16px
@@ -19,10 +22,19 @@
   .heading
     brad()
     font-size 34px
+    @media screen and (max-width: 992px)
+      text-align center
+    @media screen and (max-width: 568px)
+      font-size 28px
   .small-heading
     font-size 25px
     padding 20px 0
     position relative
+    @media screen and (max-width: 992px)
+      padding 5px 0px
+      text-align center
+    @media screen and (max-width: 568px)
+      font-size 21px
     &:after
       content ''
       width 95px
@@ -31,8 +43,15 @@
       left 0
       bottom 0
       background $orange
+      @media screen and (max-width: 992px)
+        left 50%
+        margin-left -47.5px
+        bottom -15px
 #modal-success
   max-width 640px
+  @media screen and (max-width: 480px)
+    height auto
+    padding 75px 0
   .success-image
     position absolute
     right 0
@@ -41,6 +60,8 @@
     height 100%
     padding 50px
     padding-left 0
+    @media screen and (max-width: 480px)
+      display none
     .image
       position relative
       left 0
@@ -50,6 +71,8 @@
       background url("../images/s13/bg.jpg") no-repeat 50%
       background-size cover
       padding 15px
+      @media screen and (max-width: 480px)
+        display none
       &:after
         content ''
         position absolute
@@ -75,6 +98,8 @@
     position relative
     z-index 10
     height 100%
+    @media screen and (max-width: 992px)
+      height auto
   .frame
     width 680px
     height 340px
@@ -85,6 +110,19 @@
     background url("../images/s13/bg.jpg") no-repeat 50%
     background-size cover
     padding 15px
+    @media screen and (max-width: 992px)
+      position relative
+      margin-top 40px
+      width 440px
+      margin 20px auto 20px
+      right 0
+      top 40px
+    @media screen and (max-width: 568px)
+      top 0
+      margin-top 40px
+
+    @media screen and (max-width: 568px)
+      width 100%
     &:before
       content ''
       width 100%

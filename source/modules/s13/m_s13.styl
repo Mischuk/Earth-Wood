@@ -4,12 +4,21 @@
   background #fff
   padding 80px 0
   height 500px
+  @media screen and (max-width: 1200px)
+    height auto
+  @media screen and (max-width: 767px)
+    padding 30px 0
   .section-title, .paragraph
     position relative
     z-index 15
   .paragraph
     margin-top -40px
     padding-right 520px
+    @media screen and (max-width: 1200px)
+      padding-right 0
+      padding-left 200px
+    @media screen and (max-width: 568px)
+      padding-left 0
   .frame
     width 680px
     height 340px
@@ -19,6 +28,13 @@
     background url("../images/s13/bg.jpg") no-repeat 50%
     background-size cover
     padding 15px
+    @media screen and (max-width: 1200px)
+      position relative
+      margin-top 40px
+      width 440px
+      margin 20px auto 20px
+    @media screen and (max-width: 568px)
+      width 100%
     &:before
       content ''
       width 100%

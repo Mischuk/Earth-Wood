@@ -9,6 +9,8 @@
   @media screen and (max-height: 680px)
     height 680px
     padding-top 50px
+  @media screen and (max-width: 680px)
+    height auto
   .scroll-down
     cursor pointer
     width 26px
@@ -34,10 +36,12 @@
     text-align center
     color #fff
     html.no-touchevents &
-      @media screen and (min-height: 680px)
+      @media screen and (min-height: 680px) and (min-width: 680px)
         position fixed
     html.touchevents &
       position absolute
+      @media screen and (max-width: 680px)
+        position relative
     @media screen and (max-height: 840px)
       margin-top -225px
     @media screen and (max-height: 680px)
@@ -47,11 +51,24 @@
       width 100%
       margin-left 0
       left 0
+    @media screen and (max-width: 680px)
+      padding 100px 0
+      margin-top 0
+      height auto
     h1
       brad()
       text-transform uppercase
       font-size 38px
       margin-bottom 35px
+      @media screen and (max-width: 640px)
+        font-size 32px
+        padding-left 30px
+        padding-right 30px
+      @media screen and (max-width: 480px)
+        font-size 28px
+      @media screen and (max-width: 420px)
+        padding-left 0
+        padding-right 0
     .paragraph
       max-width 80%
       margin 0 auto
@@ -63,6 +80,15 @@
     height 68px
     line-height 64px
     margin-left -(@width/2)
+    @media screen and (max-width: 680px)
+      position static
+      margin 20px auto
+    @media screen and (max-width: 568px)
+      width 100%
+      left 0
+      margin-left 0
+      line-height 1
+      height auto
     a
       regular()
       display block
@@ -71,5 +97,10 @@
       color $orange
       font-size 18px
       border-radius 50px
+      @media screen and (max-width: 568px)
+        display inline-block
+        vertical-align middle
+        width 90%
+        padding 10px 20px
       &:hover
         color #fff

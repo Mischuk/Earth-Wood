@@ -5,7 +5,14 @@
   background url("../images/s5/bg.jpg") no-repeat 50%
   background-size cover
   box-shadow inset 0 0 5px rgba(0,0,0,.2)
-  background-attachment fixed
+  html.no-touchevents &
+    background-attachment fixed
+  @media screen and (max-width: 767px)
+    height auto
+  .wrapper
+    @media screen and (max-width: 1250px)
+      padding-left 0
+      padding-right 0
   .vertical-inner
     position relative
     z-index 10
@@ -19,6 +26,10 @@
     background-repeat no-repeat
     background-position 50%
     background-size cover
+    @media screen and (max-width: 767px)
+      width 100%
+      float none
+      padding 30px
     &:nth-child(1)
       background-image url("../images/s5/1.jpg")
       .icon
@@ -126,6 +137,10 @@
     .paragraph
       position relative
       height 90px
+      @media screen and (max-width: 992px)
+        height auto
+      @media screen and (max-width: 767px)
+        margin-bottom 15px
       &:after
         anim()
         content ''
@@ -137,4 +152,8 @@
         opacity 0
         margin-left -(@width/2)
         background rgba(255,255,255,.3)
+        @media screen and (max-width: 992px)
+          bottom -15px
+        @media screen and (max-width: 767px)
+          display none
 
